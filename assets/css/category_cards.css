@@ -1,0 +1,42 @@
+.category__cards {
+  background: #ffffff;
+  border: 1px solid #bdd631;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.card__title {
+  color: #2B4466;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.category__cards:hover {
+  border: 1px solid #2B4466;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.category__cards:hover .card__title {
+  color: #BDD631;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__image {
+  width: 100%;
+  max-width: 170px;
+}
+
+@media (min-width: 335px) and (max-width: 576px) {
+  .category_card_box .col-12 {
+    width: 50%;
+  }
+}

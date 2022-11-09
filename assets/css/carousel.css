@@ -1,0 +1,127 @@
+@media (min-width: 460px) and (max-width: 768px) {
+    .carousel-item {
+      height: 55vh;
+    }
+    .carousel-item img {
+      -o-object-fit: cover !important;
+         object-fit: cover !important;
+      height: 100%;
+    }
+    .custom_gradient {
+      background: rgb(0, 33, 57);
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 33, 57, 0.8463760504)), color-stop(71%, rgba(11, 65, 105, 0.274947479)), to(rgba(0, 82, 158, 0)));
+      background: -o-linear-gradient(bottom, rgba(0, 33, 57, 0.8463760504) 0%, rgba(11, 65, 105, 0.274947479) 71%, rgba(0, 82, 158, 0) 100%);
+      background: linear-gradient(0deg, rgba(0, 33, 57, 0.8463760504) 0%, rgba(11, 65, 105, 0.274947479) 71%, rgba(0, 82, 158, 0) 100%);
+      width: 100%;
+      height: 100%;
+    }
+    h5 {
+      font-size: 32px !important;
+    }
+    p {
+      font-size: 16px;
+    }
+    .carousel_button {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1268px) {
+    .carousel-item {
+      height: calc(100vh - 146px);
+    }
+    .carousel-item img {
+      -o-object-fit: cover !important;
+         object-fit: cover !important;
+      height: 100%;
+    }
+    .carousel-item h5 {
+      font-size: 48px;
+    }
+    .carousel-item p {
+      font-size: 18px;
+    }
+    .carousel-item .carousel-caption {
+      position: absolute;
+      top: 35vh;
+      left: 15%;
+      right: unset;
+      bottom: unset;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #fff;
+      text-align: center;
+    }
+    .custom_gradient {
+      background: rgb(0, 33, 57);
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0, 33, 57, 0.8463760504)), color-stop(57%, rgba(147, 205, 247, 0.3029586835)), to(rgba(0, 82, 158, 0)));
+      background: -o-linear-gradient(left, rgba(0, 33, 57, 0.8463760504) 0%, rgba(147, 205, 247, 0.3029586835) 57%, rgba(0, 82, 158, 0) 100%);
+      background: linear-gradient(90deg, rgba(0, 33, 57, 0.8463760504) 0%, rgba(147, 205, 247, 0.3029586835) 57%, rgba(0, 82, 158, 0) 100%);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (min-width: 1268px) {
+    .carousel-item {
+      height: calc(100vh - 146px);
+    }
+    .carousel-item img {
+      -o-object-fit: cover !important;
+         object-fit: cover !important;
+      height: 100%;
+    }
+    .carousel-item h5 {
+      font-size: 52px;
+    }
+    .carousel-item p {
+      font-size: 20px;
+    }
+    .carousel-item .carousel-caption {
+      position: absolute;
+      top: 35vh;
+      left: 15%;
+      right: unset;
+      bottom: unset;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #fff;
+      text-align: center;
+    }
+    .custom_gradient {
+      background: rgb(0, 33, 57);
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0, 33, 57, 0.8463760504)), color-stop(57%, rgba(147, 205, 247, 0.3029586835)), to(rgba(0, 82, 158, 0)));
+      background: -o-linear-gradient(left, rgba(0, 33, 57, 0.8463760504) 0%, rgba(147, 205, 247, 0.3029586835) 57%, rgba(0, 82, 158, 0) 100%);
+      background: linear-gradient(90deg, rgba(0, 33, 57, 0.8463760504) 0%, rgba(147, 205, 247, 0.3029586835) 57%, rgba(0, 82, 158, 0) 100%);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .carousel-item {
+      height: 80vh;
+    }
+    .carousel-item img {
+      -o-object-fit: cover !important;
+         object-fit: cover !important;
+      height: 100%;
+    }
+    .custom_gradient {
+      background: rgb(0, 33, 57);
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 33, 57, 0.8463760504)), color-stop(71%, rgba(11, 65, 105, 0.274947479)), to(rgba(0, 82, 158, 0)));
+      background: -o-linear-gradient(bottom, rgba(0, 33, 57, 0.8463760504) 0%, rgba(11, 65, 105, 0.274947479) 71%, rgba(0, 82, 158, 0) 100%);
+      background: linear-gradient(0deg, rgba(0, 33, 57, 0.8463760504) 0%, rgba(11, 65, 105, 0.274947479) 71%, rgba(0, 82, 158, 0) 100%);
+      width: 100%;
+      height: 100%;
+    }
+    .carousel-caption{
+      bottom: 35%!important;
+    }
+    h5 {
+      font-size: 26px !important;
+    }
+    p {
+      font-size: 14px;
+    }
+    .carousel_button {
+      margin-bottom: 10px;
+    }
+  }

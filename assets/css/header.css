@@ -1,0 +1,338 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+body {
+  font-family: "SF Pro Display", sans-serif !important;
+  background-color: #F1EEEE!important;
+  overflow-x: hidden!important;
+}
+
+header {
+  background-color: #2B4466;
+}
+
+.search__input {
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #bdd631;
+  -webkit-box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+
+.search__input input {
+  background: transparent;
+  border: none;
+  color: #2B4466;
+  font-weight: 100;
+  padding: 0;
+}
+
+.search__input i {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.search__input input:focus {
+  outline: none !important;
+}
+
+.search__input input::-webkit-input-placeholder {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.search__input input::-moz-placeholder {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.search__input input:-ms-input-placeholder {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.search__input input::-ms-input-placeholder {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.search__input input::placeholder {
+  color: #2B4466;
+  font-weight: 100;
+}
+
+.navigation-links {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 5px 10px;
+}
+
+.navigation-links:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #BDD631;
+}
+
+.button {
+  padding: 10px 13px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.outline__buton {
+  background: transparent;
+}
+
+.button_register {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 100;
+}
+.button_register i {
+  border-bottom: 1px solid #ffffff;
+}
+
+.button_register:hover {
+  border: 1px solid #BDD631;
+  background: #BDD631;
+  color: #2B4466;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.button_register:hover i {
+  border-bottom: 1px solid #2B4466;
+}
+
+.place__order {
+  background: #BDD631;
+  border: 1px solid #BDD631;
+  font-weight: 700;
+  color: #2B4466;
+}
+
+.place__order:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #2B4466;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.favorite-link i {
+  font-size: 24px;
+  color: #BDD631;
+}
+
+.favorite-link:hover i::before {
+  content: "\f415";
+}
+
+#lang_select {
+  background: transparent;
+  border: none;
+  color: #BDD631;
+  font-size: 20px;
+}
+#lang_select option {
+  background: #2B4466;
+}
+
+#lang_select:focus {
+  outline: none;
+}
+
+#lang_select:active {
+  outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 1268px) {
+  .site__padding {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .navigation__menu {
+    display: none;
+  }
+  .navigation__menu_tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__menu_tablet .navigation-links:last-child {
+    margin-right: 0 !important;
+  }
+  .header__logo {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1268px) {
+  .site__padding {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .navigation__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__menu_tablet {
+    display: none;
+  }
+  .header__logo {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site__padding {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .navigation__menu,
+.bottom__content,
+.button__box {
+    display: none;
+  }
+  .header__logo {
+    max-width: 150px;
+    width: 100%;
+  }
+  .burger__button {
+    color: #ffffff;
+    font-size: 36px;
+  }
+  .navigation__menu_mobile .navigation-links {
+    color: #2B4466;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  .offcanvas {
+    max-width: 320px !important;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    padding-bottom: 2rem;
+    border-radius: 10px 0 0 10px;
+  }
+  .favorite-link span {
+    color: #BDD631;
+    font-size: 18px;
+  }
+  #lang_select {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .button_register {
+    background: #2B4466;
+    color: #BDD631;
+    font-weight: 700;
+  }
+  .button_register i {
+    border-bottom: 1px solid #BDD631;
+  }
+  .place__order:hover {
+    background: #2B4466;
+    color: #BDD631;
+  }
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 28px;
+  color:#2B4466;
+}
+
+.banner_section {
+  background-color: #2B4466;
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  border: 1px solid #bdd631;
+}
+
+.cta__image {
+  width: 100%;
+  max-width: 150px;
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 28px;
+  color: #2B4466;
+}
+
+.pulse_button {
+  -webkit-animation: pulse 1.2s ease infinite;
+          animation: pulse 1.2s ease infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.cursor_icon {
+  color: #ffffff;
+  bottom: -27px;
+  font-size: 26px;
+  left: 20px;
+  -webkit-transform: rotate(24deg);
+      -ms-transform: rotate(24deg);
+          transform: rotate(24deg);
+  -webkit-filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+          filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+}
+
+.accent-color {
+  color: #bdd631 !important;
+}
+
+#place_anonceLabel {
+  color: #2B4466;
+}
+.primary__color{
+  color: #2B4466!important;
+}
