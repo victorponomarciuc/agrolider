@@ -258,7 +258,7 @@ header {
   .section__title{
     font-size: 20px!important;
   }
-  .section__title span{
+  .section__title a{
     font-size: 16px!important;
     width: 100%!important;
   }
@@ -288,10 +288,87 @@ header {
   font-size: 28px;
   color: #2B4466;
 }
-
+.subcategory-title{
+  color: #2B4466;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.subcategory-title:hover{
+  color: #BDD631;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 .pulse_button {
   -webkit-animation: pulse 1.2s ease infinite;
           animation: pulse 1.2s ease infinite;
+}
+
+.favorite_button {
+  border-radius: 100%;
+  background: #dedede;
+  right: 1rem;
+  top: 1rem;
+  width: 40px;
+  height: 40px;
+  display: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.favorite_heart {
+  width: 20px;
+}
+.products__cards:hover .favorite_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.favorite_button:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background: #bdd631;
+}
+.favorite_product{
+  background: #2b4466;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.details_button {
+  background: #bdd631;
+  border: 1px solid #bdd631;
+  -webkit-box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #2b4466;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 45px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.details_button:hover {
+  background: #2b4466;
+  border: 1px solid #2b4466;
+  -webkit-box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #bdd631;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 45px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @-webkit-keyframes pulse {
