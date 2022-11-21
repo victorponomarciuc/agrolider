@@ -254,6 +254,15 @@ header {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .section__title{
+    font-size: 20px!important;
+  }
+  .section__title span{
+    font-size: 16px!important;
+    width: 100%!important;
+  }
+}
 .section__title {
   font-weight: 900;
   font-size: 28px;

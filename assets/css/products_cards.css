@@ -6,7 +6,7 @@
   height: 100%;
   max-height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .products__cards {
@@ -21,8 +21,8 @@
 }
 
 .products_card__title {
-  color: #2B4466;
-  font-size: 20px;
+  color: #2b4466;
+  font-size: 18px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -30,8 +30,8 @@
 }
 
 .products_card__price {
-  color: #2B4466;
-  font-size: 18px;
+  color: #2b4466;
+  font-size: 16px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -43,22 +43,58 @@
 }
 
 .products__cards:hover {
-  border: 1px solid #2B4466;
+  border: 1px solid #2b4466;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 .products__cards:hover .products_card__title {
-  color: #BDD631;
+  color: #bdd631;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.favorite_button {
+  border-radius: 100%;
+  background: #dedede;
+  right: 1rem;
+  top: 1rem;
+  width: 40px;
+  height: 40px;
+  display: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.favorite_heart {
+  width: 20px;
+}
+.products__cards:hover .favorite_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.favorite_button:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background: #bdd631;
+}
+.favorite_product{
+  background: #2b4466;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (max-width: 1280px) {
   .products_card__title {
     font-size: 18px;
   }
   .products_card__price {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
