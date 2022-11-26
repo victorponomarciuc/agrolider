@@ -33,13 +33,13 @@
                     <a href="index.html" class="navigation-links text-decoration-none">Acasa</a>
                     <a href="about.html" class="navigation-links text-decoration-none">Despre noi</a>
                     <a href="catalog_subcategory.html" class="navigation-links text-decoration-none">Catalog</a>
-                    <a href="#" class="navigation-links text-decoration-none">Livrare</a>
+                    <a href="delivery.html" class="navigation-links text-decoration-none">Livrare</a>
                     <a href="contacts.html" class="navigation-links text-decoration-none">Contacte</a>
                 </nav>
 
                 <div class="button__box d-md-flex align-items-center flex-wrap">
 
-                    <a href="#" class="outline__buton button button_register text-decoration-none me-2">
+                    <a href="login.html" class="outline__buton button button_register text-decoration-none me-2">
                         <i class="bi bi-pencil me-1"></i>
                         <span>Logare / Inregistrare</span>
                     </a>
@@ -75,7 +75,7 @@
                     <a href="index.html" class="navigation-links text-decoration-none">Acasa</a>
                     <a href="about.html" class="navigation-links text-decoration-none">Despre noi</a>
                     <a href="catalog_subcategory.html" class="navigation-links text-decoration-none">Catalog</a>
-                    <a href="#" class="navigation-links text-decoration-none">Livrare</a>
+                    <a href="delivery.html" class="navigation-links text-decoration-none">Livrare</a>
                     <a href="contacts.html" class="navigation-links text-decoration-none">Contacte</a>
                 </nav>
             </div>
@@ -275,13 +275,7 @@
                         <span class="products_card__price mt-1">Pret: <span>2550$</span></span>
                     </a>
                 </div>
-                <div class="w-100 col-12 mt-5 pagination_box d-flex justify-content-center align-items-center">
-                    <a href="" class="numer_pagination active_page m-2">1</a>
-                    <a href="" class="numer_pagination m-2">2</a>
-                    <a href="" class="numer_pagination m-2">3</a>
-                    <a href="" class="numer_pagination m-2">4</a>
-                    <a href="" class="numer_pagination m-2">5</a>
-                </div>
+              
             </div>
         </div>
     </section>
@@ -377,21 +371,28 @@
     <!-- modal annonce -->
     <div class="modal fade" id="place_anonce" tabindex="-1" aria-labelledby="place_anonceLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <form action="" class="order_form">
+                <div class="form_content">
+                    <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
+                    <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
+                    <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+                    <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
+              <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- modal -->
     <div class="offcanvas offcanvas-end d-md-none" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -409,14 +410,14 @@
             <nav class="navigation__menu_mobile d-flex flex-column align-items-start justify-content-start">
                 <a href="index.html" class="navigation-links text-decoration-none">Acasa</a>
                 <a href="about.html" class="navigation-links text-decoration-none">Despre noi</a>
-                <a href="#" class="navigation-links text-decoration-none">Catalog</a>
-                <a href="#" class="navigation-links text-decoration-none">Livrare</a>
+                <a href="catalog_subcategory.html" class="navigation-links text-decoration-none">Catalog</a>
+                <a href="delivery.html" class="navigation-links text-decoration-none">Livrare</a>
                 <a href="contacts.html" class="navigation-links text-decoration-none">Contacte</a>
             </nav>
 
             <div class="favorite__and__lang d-flex align-items-center justify-content-between  ms-2 my-3">
 
-                <a href="#" class="text-decoration-none favorite-link d-flex align-items-center">
+                <a href="favorite.html" class="text-decoration-none favorite-link d-flex align-items-center">
                     <i class="bi bi-heart me-2"></i>
                     <span>Favorite</span>
                 </a>
@@ -427,7 +428,7 @@
                 </select>
             </div>
 
-            <a href="#"
+            <a href="login.html"
                 class="outline__buton button button_register text-decoration-none d-flex justify-content-center mt-5">
                 <i class="bi bi-pencil me-1"></i>
                 <span>Logare / Inregistrare</span>

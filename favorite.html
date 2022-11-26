@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/contacts.css">
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="stylesheet" href="assets/css/products_cards.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -82,63 +83,154 @@
         </div>
     </header>
 
-
     <section class="site__padding mt-4 mt-md-5 pb-md-5">
-        <h1 class="section__title">Contacte:</h1>
-        <div class="maps_container mt-3 bg-white p-3">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.194950117645!2d28.84519291584455!3d47.016778236527934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dd9c45a26d1%3A0xcf8b1ee2698c2b94!2sParcare!5e0!3m2!1sen!2s!4v1668026322137!5m2!1sen!2s"
-                width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <h1 class="section__title">Produse favorite:</h1>
 
-        <div class="row g-3 flex-column-reverse flex-md-row custom_gap justify-content-between mt-3">
-            <div class="col-12 col-md-6 col-xl-5">
-                <div class="contact_info h-100 p-3">
-                    <h5 class="primary__color text-center">Contacteaza-ne</h5>
-                    <div class="form_content contact_form_content mt-3">
-                        <nav class="footer_categories  d-flex flex-column">
-                            <a href="#" class="navigation-links text-decoration-none"><i class="bi bi-geo-alt"></i>
-                                <span>Moldova,
-                                    Chisinau, str. Strada 123</span></a>
-                            <a href="#" class="navigation-links text-decoration-none"><i
-                                    class="bi bi-telephone-inbound"></i>
-                                <span>+1(234)567-89-00</span></a>
-                            <a href="#" class="navigation-links text-decoration-none"><i
-                                    class="bi bi-telephone-inbound"></i>
-                                <span>+1(234)567-89-00</span></a>
-                            <a href="#" class="navigation-links text-decoration-none"><i class="bi bi-envelope"></i>
-                                <span>exemple@mail.com</span></a>
-                            <div href="#" class="navigation-links text-decoration-none"><i class="bi bi-clock"></i>
-                                <span>Luni - Vineri:
-                                    09;00 - 19;00</span>
-                            </div>
-                            <div class="navigation-links text-decoration-none"><i class="bi bi-clock-history"></i>
-                                <span>Sambata: 10;00
-                                    - 17;00</span>
-                            </div>
-                        </nav>
+        <div class="row g-3 custom_gap justify-content-center mt-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
                     </div>
-                </div>
+                    <img src="assets/images/products/produs1.jpg" class="products_cards_image" alt="">
+                    <span class="products_card__title mt-3">Stropitoare pentru cereale</span>
+                    <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
+                </a>
             </div>
-            <div class="col-12 col-md-6 col-xl-5">
-                <form action="" class="contact_form p-3 h-100">
-                    <h5 class="primary__color text-center">Trimite mesaj</h5>
-                    <div class="form_content mt-3">
-                        <input type="text" name="name" placeholder="Nume" class="contact_form_input mb-3" required>
-                        <input type="text" name="phone" placeholder="Telefon" class="contact_form_input mb-3" required>
-                        <input type="email" name="email" placeholder="Email" class="contact_form_input mb-3">
-                        <textarea name="message" id="contact_form_message" rows="5" placeholder="Mesaj" class="contact_form_input" required></textarea>
-                        <div class="mt-3 d-flex justify-content-center">
-                            <button type="submit" class="details_button">Trimite</button>
-                        </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div
+                        class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
                     </div>
-                    
-                </form>
+                    <img src="assets/images/products/produs2.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Distribuitor de gunoi de grajd</span>
+                    <span class="products_card__price mt-1">Pret: <span>670$</span></span>
+                </a>
             </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div
+                        class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs3.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Pres de balotat</span>
+                    <span class="products_card__price mt-1">Pret: <span>998$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs4.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Semanatoare pentru popusoi 2.5m</span>
+                    <span class="products_card__price mt-1">Pret: <span>1368$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs5.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Tractor Solis (90 cai, 4x4)</span>
+                    <span class="products_card__price mt-1">Pret: <span>9800$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs6.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Погрузщик PowerPLUS-AT92</span>
+                    <span class="products_card__price mt-1">Pret: <span>12300$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/7691_2202201591144.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Cultivator Horsh 8m</span>
+                    <span class="products_card__price mt-1">Pret: <span>750$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/kartofelesazhalka-Kora-4-H-hydraulischer-Kippbunker-NEU---1_common--17041211451985692000.jpg"
+                        class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Semanatoare pentur Cartofi 3m</span>
+                    <span class="products_card__price mt-1">Pret: <span>1980$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/1.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Cultivator cu irigare 6m</span>
+                    <span class="products_card__price mt-1">Pret: <span>2550$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs10.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">Grapa cu discuri</span>
+                    <span class="products_card__price mt-1">Pret: <span>3500$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs11.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">John Deere 6230P - 2008</span>
+                    <span class="products_card__price mt-1">Pret: <span>5000$</span></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="product_page.html"
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                    <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                        <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                    </div>
+                    <img src="assets/images/products/produs12.jpg" class="products_cards_image" alt="">
+                    <span class="text-decoration-none products_card__title mt-3">John Deere 7920</span>
+                    <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
+                </a>
+            </div>
+        </div>
+        <div class="w-100 col-12 mt-5 pagination_box d-flex justify-content-center align-items-center">
+            <a href="" class="numer_pagination active_page m-2">1</a>
+            <a href="" class="numer_pagination m-2">2</a>
+            <a href="" class="numer_pagination m-2">3</a>
+            <a href="" class="numer_pagination m-2">4</a>
+            <a href="" class="numer_pagination m-2">5</a>
         </div>
     </section>
-
 
 
     <footer class="mt-5">
@@ -231,28 +323,32 @@
     <!-- modal annonce -->
     <div class="modal fade" id="place_anonce" tabindex="-1" aria-labelledby="place_anonceLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" class="order_form w-100">
-                <div class="form_content">
-                    <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
-                    <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
-                    <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
-                    <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </form>
+                <div class="modal-body">
+                    <form action="" class="order_form">
+                        <div class="form_content">
+                            <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3"
+                                required>
+                            <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3"
+                                required>
+                            <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+                            <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj"
+                                class="order_form_input" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
+                    <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i>
+                        Trimite</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
-              <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- modal -->
     <div class="offcanvas offcanvas-end d-md-none" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"

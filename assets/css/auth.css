@@ -1,0 +1,43 @@
+.auth_form_image {
+    width: 100%;
+    min-height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: url("../images/login_form.jpg");
+    background-size: cover;
+    background-position: bottom left;
+  }
+  
+  .white_section {
+    max-width: 650px;
+    border-radius: 10px;
+  }
+  
+  .auth_link {
+    color: #2B4466;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .auth_link:hover {
+    color: #BDD631;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .logo-auth {
+      max-width: 350px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo-auth {
+      max-width: 250px;
+    }
+    .custom-login_form {
+      min-height: 100vh;
+    }
+  }
