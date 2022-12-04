@@ -309,17 +309,17 @@ header {
 .favorite_button {
   border-radius: 100%;
   background: #dedede;
-  right: 1rem;
-  top: 1rem;
-  width: 40px;
-  height: 40px;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
   display: none;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 .favorite_heart {
-  width: 20px;
+  width: 15px;
 }
 .products__cards:hover .favorite_button {
   display: -webkit-box;
@@ -429,6 +429,57 @@ header {
   border-radius: 10px;
   padding: 7px 15px;
 }
-.order_form_message{
-  
+
+.mini_search{
+  max-width: 120px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.mini_search:focus-within {
+  max-width: 100%!important;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.minisearch{
+  z-index: 1;
+  right: 0;
+  width: 100%;
+}
+.numer_pagination {
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #bdd631;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.numer_pagination:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #bdd631;
+  background: #2b4466;
+}
+
+.active_page {
+  background: rgba(189, 214, 49, 0.23);
 }

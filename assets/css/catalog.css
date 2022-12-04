@@ -1,37 +1,4 @@
-.numer_pagination {
-    text-decoration: none;
-    background: #ffffff;
-    border: 1px solid #bdd631;
-    border-radius: 3px;
-    width: 45px;
-    height: 45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #000000;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .numer_pagination:hover {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    color: #bdd631;
-    background: #2b4466;
-  }
-  
-  .active_page {
-    background: rgba(189, 214, 49, 0.23);
-  }
-  
+ 
   .filter_gradient {
     background: -o-linear-gradient(270.25deg, rgba(189, 214, 49, 0.32) 0.22%, rgba(255, 255, 255, 0.08) 33.48%);
     background: linear-gradient(179.75deg, rgba(189, 214, 49, 0.32) 0.22%, rgba(255, 255, 255, 0.08) 33.48%);

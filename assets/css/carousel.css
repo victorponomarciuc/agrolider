@@ -1,3 +1,6 @@
+.carousel-caption {
+      bottom: 35%!important;
+  }
 @media (min-width: 460px) and (max-width: 768px) {
     .carousel-item {
       height: 55vh;
@@ -24,6 +27,7 @@
     .carousel_button {
       margin-bottom: 10px;
     }
+
   }
   @media (min-width: 768px) and (max-width: 1268px) {
     .carousel-item {

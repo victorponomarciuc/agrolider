@@ -85,7 +85,10 @@
 
     <section class="mt-4 mt-md-5 container__main site__padding">
         <h1 class="section__title">Despre noi:</h1>
-        <p class="mt-4 about_description">
+        <section class="container__video d-flex justify-content-center my-4 my-md-5">
+            <iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen></iframe>
+        </section>
+        <p class="mt-4 about_description read_more_text" id="read_more_text_id">
             Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam
             eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo
@@ -116,12 +119,55 @@
             delectus, ut aut
             reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
+        <div class="d-flex d-xl-none justify-content-center w-100 mt-2">
+            <button class="details_button text-decoration-none" onclick="showFunction()" id="read_more_button">Citește
+                mai mult</button>
+            <button class="details_button text-decoration-none d-none" onclick="hideFunction()"
+                id="hide_more_button">Ascunde</button>
+        </div>
     </section>
 
-    <section class="container__video site__padding d-flex justify-content-center my-4 my-md-5">
-        <iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen></iframe>
+    <section class="mt-4 mt-md-5 container__main site__padding">
+        <h1 class="section__title">Recenzii:</h1>
+        <div class="row g-3 custom_gap justify-content-center mt-3">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100 mt-5">
+            <a href="recenzii.html" class="details_button text-decoration-none">Vezi toate recenziile</a>
+        </div>
     </section>
-
     <section class="mt-4 mt-md-5 container__main site__padding">
         <h1 class="section__title">Comenzi realizate:</h1>
         <div class="row g-3 custom_gap justify-content-center mt-3">
@@ -182,49 +228,7 @@
 
         </div>
         <div class="d-flex justify-content-center w-100 mt-5">
-            <a href="#" class="details_button text-decoration-none">Vezi toate comenzile</a>
-        </div>
-    </section>
-
-    <section class="mt-4 mt-md-5 container__main site__padding">
-        <h1 class="section__title">Recenzii:</h1>
-        <div class="row g-3 custom_gap justify-content-center mt-3">
-            <div class="col-12 col-sm-6 col-md-4">
-                <div
-                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
-                    <span class="products_card__title mt-3">Vasile Petrov</span>
-                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
-                        Voluptate?</span>
-                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
-                            class="mx-auto my-2"></iframe></div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div
-                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
-                    <span class="products_card__title mt-3">Vasile Petrov</span>
-                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
-                        Voluptate?</span>
-                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
-                            class="mx-auto my-2"></iframe></div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div
-                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
-                    <span class="products_card__title mt-3">Vasile Petrov</span>
-                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
-                        Voluptate?</span>
-                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
-                            class="mx-auto my-2"></iframe></div>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center w-100 mt-5">
-            <a href="#" class="details_button text-decoration-none">Vezi toate recenziile</a>
+            <a href="orders.html" class="details_button text-decoration-none">Vezi toate comenzile</a>
         </div>
     </section>
 
@@ -301,10 +305,16 @@
                             alt="logo"></a>
                 </div>
                 <div class="footer-social_link_box d-flex align-items-center mt-2">
-                    <a href="#" class="text-decoration-none ms-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-decoration-none ms-2"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-decoration-none ms-2"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="text-decoration-none ms-2"><i class="bi bi-telegram"></i></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt=""
+                            class="social_svg"></a>
                 </div>
             </div>
 
@@ -383,28 +393,32 @@
     <!-- modal annonce -->
     <div class="modal fade" id="place_anonce" tabindex="-1" aria-labelledby="place_anonceLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" class="order_form">
-                <div class="form_content">
-                    <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
-                    <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
-                    <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
-                    <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </form>
+                <div class="modal-body">
+                    <form action="" class="order_form">
+                        <div class="form_content">
+                            <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3"
+                                required>
+                            <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3"
+                                required>
+                            <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+                            <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj"
+                                class="order_form_input" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
+                    <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i>
+                        Trimite</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
-              <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- modal -->
     <div class="offcanvas offcanvas-end d-md-none" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -464,6 +478,19 @@
         let text = item[i].innerHTML
         let new_text = text.slice(0, 175) + (text.length > 175 ? "..." : "");
         let new_item = item[i].innerHTML = new_text;
+    }
+    let showButton = document.getElementById('read_more_button')
+    let hideButton = document.getElementById('hide_more_button')
+    let content_box = document.getElementById('read_more_text_id')
+    function showFunction() {
+        showButton.classList.add("d-none");
+        hideButton.classList.remove("d-none");
+        content_box.classList.remove("read_more_text");
+    }
+    function hideFunction() {
+        hideButton.classList.add("d-none");
+        showButton.classList.remove("d-none");
+        content_box.classList.add("read_more_text");
     }
 </script>
 

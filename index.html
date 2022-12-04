@@ -79,10 +79,16 @@
           <a href="contacts.html" class="navigation-links text-decoration-none">Contacte</a>
         </nav>
       </div>
-
     </div>
   </header>
-
+  <section class="minisearch site__padding position-absolute">
+    <div class="d-flex w-100 justify-content-end d-md-none">
+      <div class="search__input mt-3 d-flex align-items-center mini_search">
+        <input type="text" id="search-content" class="w-100 minisearch_input" placeholder="Cautare">
+        <i class="bi bi-search"></i>
+      </div>
+    </div>
+  </section>
 
   <section class="carousel_home_page">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -275,7 +281,7 @@
   <section class="site__padding mt-4 mt-md-5 pb-md-5">
     <h1 class="section__title">Anunturi recent publicate:</h1>
 
-    <div class="row g-3 custom_gap justify-content-center mt-3">
+    <div class="row g-3 custom_gap justify-content-center category_card_box mt-3">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <a href="product_page.html"
           class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
@@ -300,13 +306,15 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <a href="product_page.html"
-        class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
-        <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
-          <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
-        </div>
+          class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+          <div class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+            <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+          </div>
           <img src="assets/images/products/produs3.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Pres de balotat</span>
-          <span class="products_card__price mt-1">Pret: <span>998$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Pres de balotat</span>
+            <span class="products_card__price mt-1">Pret: <span>998$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -316,8 +324,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs4.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Semanatoare pentru popusoi 2.5m</span>
-          <span class="products_card__price mt-1">Pret: <span>1368$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Semanatoare pentru popusoi 2.5m</span>
+            <span class="products_card__price mt-1">Pret: <span>1368$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -327,8 +337,10 @@
             <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs5.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Tractor Solis (90 cai, 4x4)</span>
-          <span class="products_card__price mt-1">Pret: <span>9800$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Tractor Solis (90 cai, 4x4)</span>
+            <span class="products_card__price mt-1">Pret: <span>9800$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -338,8 +350,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs6.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Погрузщик PowerPLUS-AT92</span>
-          <span class="products_card__price mt-1">Pret: <span>12300$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Погрузщик PowerPLUS-AT92</span>
+            <span class="products_card__price mt-1">Pret: <span>12300$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -349,8 +363,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/7691_2202201591144.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Cultivator Horsh 8m</span>
-          <span class="products_card__price mt-1">Pret: <span>750$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Cultivator Horsh 8m</span>
+            <span class="products_card__price mt-1">Pret: <span>750$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -362,8 +378,10 @@
           <img
             src="assets/images/products/kartofelesazhalka-Kora-4-H-hydraulischer-Kippbunker-NEU---1_common--17041211451985692000.jpg"
             class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Semanatoare pentur Cartofi 3m</span>
-          <span class="products_card__price mt-1">Pret: <span>1980$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Semanatoare pentur Cartofi 3m</span>
+            <span class="products_card__price mt-1">Pret: <span>1980$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -373,8 +391,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/1.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Cultivator cu irigare 6m</span>
-          <span class="products_card__price mt-1">Pret: <span>2550$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Cultivator cu irigare 6m</span>
+            <span class="products_card__price mt-1">Pret: <span>2550$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -384,8 +404,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs10.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">Grapa cu discuri</span>
-          <span class="products_card__price mt-1">Pret: <span>3500$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">Grapa cu discuri</span>
+            <span class="products_card__price mt-1">Pret: <span>3500$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -395,8 +417,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs11.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">John Deere 6230P - 2008</span>
-          <span class="products_card__price mt-1">Pret: <span>5000$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">John Deere 6230P - 2008</span>
+            <span class="products_card__price mt-1">Pret: <span>5000$</span></span>
+          </div>
         </a>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -406,8 +430,10 @@
             <img src="assets/images/heart.svg" class="favorite_heart" alt="">
           </div>
           <img src="assets/images/products/produs12.jpg" class="products_cards_image" alt="">
-          <span class="text-decoration-none products_card__title mt-3">John Deere 7920</span>
-          <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
+          <div class="d-flex flex-column">
+            <span class="text-decoration-none products_card__title mt-3">John Deere 7920</span>
+            <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
+          </div>
         </a>
       </div>
     </div>
@@ -422,10 +448,11 @@
           <a href="index.html"><img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="header__logo" alt="logo"></a>
         </div>
         <div class="footer-social_link_box d-flex align-items-center mt-2">
-          <a href="#" class="text-decoration-none ms-2"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-decoration-none ms-2"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-decoration-none ms-2"><i class="bi bi-whatsapp"></i></a>
-          <a href="#" class="text-decoration-none ms-2"><i class="bi bi-telegram"></i></a>
+          <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt="" class="social_svg"></a>
+          <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt="" class="social_svg"></a>
+          <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt="" class="social_svg"></a>
+          <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt="" class="social_svg"></a>
+          <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt="" class="social_svg"></a>
         </div>
       </div>
 
@@ -499,16 +526,18 @@
         <div class="modal-body">
           <form action="" class="order_form">
             <div class="form_content">
-                <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
-                <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
-                <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
-                <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+              <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
+              <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
+              <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+              <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input"
+                required></textarea>
             </div>
-        </form>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
-          <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
+          <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i>
+            Trimite</button>
         </div>
       </div>
     </div>
@@ -548,7 +577,8 @@
         </select>
       </div>
 
-      <a href="login.html" class="outline__buton button button_register text-decoration-none d-flex justify-content-center mt-5">
+      <a href="login.html"
+        class="outline__buton button button_register text-decoration-none d-flex justify-content-center mt-5">
         <i class="bi bi-pencil me-1"></i>
         <span>Logare / Inregistrare</span>
       </a>

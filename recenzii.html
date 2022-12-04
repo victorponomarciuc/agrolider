@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/contacts.css">
-    <link rel="stylesheet" href="assets/css/cabinet.css">
+    <link rel="stylesheet" href="assets/css/products_cards.css">
+    <link rel="stylesheet" href="assets/css/about_page.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -75,180 +75,90 @@
                     <a href="index.html" class="navigation-links text-decoration-none">Acasa</a>
                     <a href="about.html" class="navigation-links text-decoration-none">Despre noi</a>
                     <a href="catalog_subcategory.html" class="navigation-links text-decoration-none">Catalog</a>
-                    <a href="delivery.html" class="navigation-links text-decoration-none">Livrare</a>
+                    <a href="#" class="navigation-links text-decoration-none">Livrare</a>
                     <a href="contacts.html" class="navigation-links text-decoration-none">Contacte</a>
                 </nav>
             </div>
 
         </div>
     </header>
-    <section class="site__padding mt-4 mt-md-5 pb-md-5">
-        <h1 class="section__title">Cabinet personal: </h1>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-3 col-xl-2">
-                <div class="mt-3 d-flex flex-column">
-                    <span class="mt-4 fs-5"><b>Ivanov Ion </b></span>
-                    <span class="mt-2">Tel: +37369969696</span>
-                    <span class="mt-2">Email: ivanov_ion@gmaiil.com</span>
-                    <span class="mt-2">Adresă: Chisinau, str. Maria Dragan 38</span>
-                </div>
-                <form action="" class="contact_form p-3 mt-3">
-                    <div class="form_content mt-3">
-                        <input type="text" name="name" placeholder="Nume" class="contact_form_input mb-3" required>
-                        <input type="text" name="phone" placeholder="Telefon" class="contact_form_input mb-3" required>
-                        <input type="email" name="email" placeholder="Email" class="contact_form_input mb-3">
-                        <textarea name="message" id="contact_form_message" rows="3" placeholder="Mesaj"
-                            class="contact_form_input" required></textarea>
-                        <div class="mt-3 d-flex justify-content-center">
-                            <button type="submit" class="details_button">Trimite</button>
-                        </div>
-                    </div>
-                </form>
-                <div class="banner_section px-3  d-flex flex-column justify-content-center align-items-center mt-3">
-                    <img src="assets/images/LOGO_AGRO_LIDER_ALB.svg" class="cta__image" alt="">
-                    <div class="text-block text-center my-4 my-lg-0">
-                        <h1 class="section__title accent-color fs-4 mt-4">Vinzi echipament?</h1>
-                        <span class="fs-5 text-white ">Fă-o cu noi!</span>
-                    </div>
-                    <button class="button place__order text-decoration-none pulse_button position-relative mt-3"
-                        data-bs-toggle="modal" data-bs-target="#place_anonce">
-                        <i class="bi bi-plus-circle me-2"></i>
-                        <span>PLASARE ANUNT</span>
-                        <i class="bi  bi-hand-index-thumb-fill me-2 position-absolute cursor_icon"></i>
-                    </button>
+
+    <section class="mt-4 mt-md-5 container__main site__padding">
+        <h1 class="section__title">Recenzii:</h1>
+        <div class="row g-3 custom_gap justify-content-center mt-3">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-9 col-xl-10 mt-5 mt-md-0">
-                <h1 class="section__title">Comenzile mele: </h1>
-                <div class="d-flex custom_flex flex-wrap">
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data comenzii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Statut: <span
-                                        class="status-pending">Comanda la prelucrare</span></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete" id="">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data comenzii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Statut: <span
-                                        class="status-delivery">Comnda la livrare</span></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete" id="">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data comenzii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Statut: <span
-                                        class="status-success">Comanda finisată</span></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete" id="">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
-                </div>
-                <h1 class="section__title mt-4">Anunțurile mele: </h1>
-                <div class="d-flex custom_flex my-annonce flex-wrap">
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data plasarii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Vizualizari: <b>125 (azi 15)</b></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete text-transparent">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data plasarii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Vizualizari: <b>125 (azi 15)</b></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete" id="">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
-                    <div class="profile_cards d-flex justify-content-between align-items-center mb-3">
-                        <div class="content_cards d-flex p-3 w-100 me-0 me-sm-3">
-                            <a href="product_page.html"><img src="assets/images/products/produs11.jpg"
-                                    class="content-card-img me-3" alt=""></a>
-                            <div class="text_content w-100">
-                                <a href="product_page.html" class="text-decoration-none">
-                                    <h1 class="fs-5 fs-md-3 content-card-title">John Deere 6230P - 2008</h1>
-                                </a>
-                                <span class="primary__color fs-6">Data plasarii: <b>26.11.2022</b></span>
-                                <h1 class="fs-6 fs-md-5 primary__color mt-3">Vizualizari: <b>125 (azi 15)</b></h1>
-                                <h1 class="fs-5 fs-md-3 primary__color mt-3">Preț: <span class="text-dark">5900$</span>
-                                </h1>
-                            </div>
-                            <img src="assets/images/LOGO_AGRO_LIDER_NEGRU.svg" class="d-none d-lg-flex"
-                                style="max-width: 150px;" alt="">
-                        </div>
-                        <span class="cards_item-delete" id="">
-                            <i class="bi bi-dash-circle"></i>
-                        </span>
-                    </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
                 </div>
             </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div
+                    class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start">
+                    <span class="products_card__title mt-3">Vasile Petrov</span>
+                    <span class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Autem asperiores dolorum quasi illo et ipsum dicta dolor repellat veritatis.
+                        Voluptate?</span>
+                    <div class="video_in_cards"><iframe src="https://www.youtube.com/embed/6JBIeeQpzJc" allowfullscreen
+                            class="mx-auto my-2"></iframe></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 col-12 mt-5 pagination_box d-flex justify-content-center align-items-center">
+            <a href="" class="numer_pagination active_page m-2">1</a>
+            <a href="" class="numer_pagination m-2">2</a>
+            <a href="" class="numer_pagination m-2">3</a>
+            <a href="" class="numer_pagination m-2">4</a>
+            <a href="" class="numer_pagination m-2">5</a>
         </div>
     </section>
 
@@ -260,12 +170,17 @@
                             alt="logo"></a>
                 </div>
                 <div class="footer-social_link_box d-flex align-items-center mt-2">
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt="" class="social_svg"></a>
-                  </div>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt=""
+                            class="social_svg"></a>
+                </div>
             </div>
 
             <div class="row g-2 mt-4">
@@ -285,12 +200,11 @@
                     <h3 class="footer__about-title">Categorii</h3>
                     <nav class="footer_categories d-flex flex-column">
                         <a href="#" class="navigation-links text-decoration-none">Tractoare</a>
-                        <a href="#" class="navigation-links text-decoration-none">Utilaje și Echipamente
-                            Speciale</a>
+                        <a href="#" class="navigation-links text-decoration-none">Utilaje și Echipamente Speciale</a>
                         <a href="#" class="navigation-links text-decoration-none">Remorci</a>
                         <a href="#" class="navigation-links text-decoration-none">Echipament post-recoltare</a>
-                        <a href="#" class="navigation-links text-decoration-none">Echipament de pregătire a
-                            furajului (fînețe)</a>
+                        <a href="#" class="navigation-links text-decoration-none">Echipament de pregătire a furajului
+                            (fînețe)</a>
                         <a href="#" class="navigation-links text-decoration-none"><b>Vezi toate</b></a>
                     </nav>
                 </div>
@@ -300,8 +214,7 @@
                         <a href="#" class="navigation-links text-decoration-none">Accesorii Agro</a>
                         <a href="#" class="navigation-links text-decoration-none">Echipament de fertilizare a
                             solului</a>
-                        <a href="#" class="navigation-links text-decoration-none">Echipament de Prelucrare a
-                            Solului</a>
+                        <a href="#" class="navigation-links text-decoration-none">Echipament de Prelucrare a Solului</a>
                         <a href="#" class="navigation-links text-decoration-none">Echipament de semănat și plantat,
                             Semănători</a>
                         <a href="#" class="navigation-links text-decoration-none">Echipament p/u Cartofi</a>
@@ -424,5 +337,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+<script>
+
+</script>
 
 </html>
