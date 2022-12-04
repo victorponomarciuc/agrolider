@@ -86,3 +86,8 @@
     height: 200px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .products_cards_image {
+    height: 250px;
+  }
+}

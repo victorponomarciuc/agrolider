@@ -16,7 +16,10 @@
   padding: 0;
   position: absolute;
 }
-
+.carousel__slide iframe, .carousel__image_thumbnail{
+  height: 430px;
+  width: 100%;
+}
 .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -500%;
 }
@@ -137,8 +140,8 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .carousel__slide .credit {

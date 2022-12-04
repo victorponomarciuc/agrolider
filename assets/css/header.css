@@ -267,6 +267,15 @@ header {
   font-weight: 900;
   font-size: 28px;
   color: #2b4466;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a.section__title:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #bdd631;
 }
 
 .banner_section {
