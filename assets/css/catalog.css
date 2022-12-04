@@ -44,7 +44,23 @@
     padding: 3px;
     max-width: 120px;
   }
-  
+  .custom_border-radius{
+    border-radius: 0 10px 10px 0!important;
+  }
+  .filter_btn{
+    background: #2b4466 !important;;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: white!important;
+  }
+  .filter_btn:hover{
+    background: #bdd631 !important;;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #2b4466!important;
+  }
   @media (min-width: 420px) and (max-width: 576px) {
     .subcategory_image {
       width: 75px !important;

@@ -85,12 +85,19 @@
 
 
     <section class="site__padding mt-4 mt-md-5 pb-md-5">
-        <h1 class="section__title">Catalog: 
-            <a href="catalog_subcategory.html" class="subcategory-title text-decoration-none">Echipament de pregătire a furajului - </a>
-            <a href="catalog_and_filter.html" class="text-muted subcategory-title text-decoration-none">Complex pentru semănat</a>
+        <h1 class="section__title">Catalog:
+            <a href="catalog_subcategory.html" class="subcategory-title text-decoration-none">Echipament de pregătire a
+                furajului - </a>
+            <a href="catalog_and_filter.html" class="text-muted subcategory-title text-decoration-none">Complex pentru
+                semănat</a>
         </h1>
-        <div class="row justify-content-between  mt-3">
-            <div class="col-12 col-md-4 col-lg-3 h-100 mt-3 ">
+        <div class="row justify-content-between p-0 m-0 mt-3">
+            <div class="d-flex justify-content-end site_padding pe-2">
+                <button class="btn filter_btn d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#filter_modal" aria-controls="filter_modal"><i class="bi bi-funnel me-2"></i><span>Filtru</span></button>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 h-100 mt-3 d-none d-md-block">
                 <div class="filter_gradient row px-2 pt-3">
                     <h1 class="catalog_title"><span>Model:</span></span></h1>
                     <div class="d-flex flex-column ms-2">
@@ -152,7 +159,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-8 col-lg-9 row g-3 mt-0 custom_gap justify-content-center">
+            <div class="col-md-8 col-lg-9 row g-3 mt-0 custom_gap justify-content-center m-0 p-0 pe-0">
                 <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                     <a href="product_page.html"
                         class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
@@ -319,12 +326,17 @@
                             alt="logo"></a>
                 </div>
                 <div class="footer-social_link_box d-flex align-items-center mt-2">
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt="" class="social_svg"></a>
-                  </div>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt=""
+                            class="social_svg"></a>
+                </div>
             </div>
 
             <div class="row g-2 mt-4">
@@ -402,28 +414,32 @@
     <!-- modal annonce -->
     <div class="modal fade" id="place_anonce" tabindex="-1" aria-labelledby="place_anonceLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" class="order_form">
-                <div class="form_content">
-                    <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
-                    <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
-                    <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
-                    <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </form>
+                <div class="modal-body">
+                    <form action="" class="order_form">
+                        <div class="form_content">
+                            <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3"
+                                required>
+                            <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3"
+                                required>
+                            <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+                            <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj"
+                                class="order_form_input" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
+                    <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i>
+                        Trimite</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
-              <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- modal -->
     <div class="offcanvas offcanvas-end d-md-none" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -472,7 +488,74 @@
             </button>
         </div>
     </div>
-
+    <!-- canvas filter -->
+    <div class="offcanvas custom_border-radius offcanvas-start pb-0" data-bs-scroll="true" tabindex="-1"
+        id="filter_modal" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-body p-0">
+            <div class="filter_gradient w-100 mx-0 row px-2 pt-3 position-relative">
+                <button type="button" class="btn-close position-absolute" style="top:5px; right:5px"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h1 class="catalog_title"><span>Model:</span></span></h1>
+                <div class="d-flex flex-column ms-2">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck0">
+                        <label class="custom-control-label" for="customCheck0">Nodet</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Amazone</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Cuhn</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Deutz</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">Class</label>
+                    </div>
+                </div>
+                <h1 class="catalog_title mt-2"><span>Pret $:</span></span></h1>
+                <div class="d-flex justify-content-start align-items-center ps-3 mt-2">
+                    <input type="number" placeholder="min" name="price_min" step="1" class="input_filter">
+                    <span class="mx-2">-</span>
+                    <input type="number" placeholder="max" name="price_max" step="1" class="input_filter">
+                </div>
+                <h1 class="catalog_title mt-3"><span>Anul producerii:</span></span></h1>
+                <div class="d-flex justify-content-start align-items-center ps-3 mt-2">
+                    <input type="number" placeholder="1990" step="1" name="year_min" class="input_filter">
+                    <span class="mx-2">-</span>
+                    <input type="number" placeholder="2022" step="1" name="year_max" class="input_filter">
+                </div>
+                <h1 class="catalog_title mt-3"><span>Capacitate:</span></span>
+                    <div class="d-flex flex-column ms-2 mt-2">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="capacitaty0">
+                            <label class="custom-control-label" for="capacitaty0">13 Tone</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="capacitaty1">
+                            <label class="custom-control-label" for="capacitaty1">10 Tone</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="capacitaty2">
+                            <label class="custom-control-label" for="capacitaty2">3 Tone</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="capacitaty3">
+                            <label class="custom-control-label" for="capacitaty3">1 Tona</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="capacitaty4">
+                            <label class="custom-control-label" for="capacitaty4">750 KG</label>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
