@@ -83,21 +83,13 @@
 
         </div>
     </header>
-    <section class="site__padding mt-4 mt-md-5 pb-md-5">
+    <section class="site__padding mt-4 mt-md-5">
         <h1 class="section__title">Catalog:
             <a href="catalog_and_filter.html" class="subcategory-title text-decoration-none">Complex pentru semănat
                 -</a>
             <a href="product_page.html" class="text-muted subcategory-title text-decoration-none">Semnatoare
                 Deutz-Farh</a>
         </h1>
-    </section>
-    <section class="site__padding w-100">
-        <div class="d-flex justify-content-between aling-items-end">
-            <h4 class="accent-color">Disponibilitate: <span class="section__title fs-4">La comanda</span></h6>
-                <div class="favorite_button d-flex justify-content-center favorite_product align-items-center">
-                    <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
-                </div>
-        </div>
     </section>
     <section class="site__padding w-100 mt-4">
         <div class="row">
@@ -127,34 +119,39 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-9 col-xl-10">
-                        <div class="page_content ms-3">
-                            <h5 class="section__title fs-4">Semnatoare Deutz-Farh</h5>
+                        <div class="page_content ms-3 position-relative">
+                            <div
+                                class="favorite_button favorite_product position-absolute d-flex justify-content-center align-items-center product_favorite">
+                                <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                            </div>
+                            <h5 class="section__title fs-4">Semnatoare Deutz-Farh - <span class="accent-color">(La
+                                    comanda)</span></h5>
 
-                            <div class="carousel mt-4 mt-lg-0">
+                            <div class="carousel col-12 col-xl-10 product_carousel mt-4 mt-lg-0">
                                 <input type="radio" name="slides" checked="checked" id="slide-0">
                                 <input type="radio" name="slides" id="slide-1">
                                 <input type="radio" name="slides" id="slide-2">
                                 <ul class="carousel__slides">
                                     <li class="carousel__slide">
-                                        <figure>
-                                            <div>
-                                                <img src="assets/images/products/produs4.jpg" alt=""></label>
-                                            </div>
-                                        </figure>
+                                        <button type="button" class="h-100 w-100 p-0 border-0 bg-transparent"
+                                            data-bs-toggle="modal" data-bs-target="#maximize_onclick">
+                                            <img src="assets/images/products/produs4.jpg"
+                                                class="w-100" alt="">
+                                        </button>
                                     </li>
                                     <li class="carousel__slide">
-                                        <figure>
-                                            <div>
-                                                <img src="assets/images/products/produs10.jpg" alt="">
-                                            </div>
-                                        </figure>
+                                        <button type="button" class="h-100 w-100 p-0 border-0 bg-transparent"
+                                            data-bs-toggle="modal" data-bs-target="#maximize_onclick">
+                                            <img src="assets/images/products/produs10.jpg"
+                                                class="w-100 " alt="">
+                                        </button>
                                     </li>
                                     <li class="carousel__slide">
-                                        <figure>
-                                            <div>
-                                                <img src="assets/images/products/produs11.jpg" alt="">
-                                            </div>
-                                        </figure>
+                                        <button type="button" class="h-100 w-100 p-0 border-0 bg-transparent"
+                                            data-bs-toggle="modal" data-bs-target="#maximize_onclick">
+                                            <img src="assets/images/products/produs11.jpg"
+                                                class="w-100" alt="">
+                                        </button>
                                     </li>
                                 </ul>
                                 <ul class="carousel__thumbnails">
@@ -187,19 +184,70 @@
                     </div>
                 </div>
                 <form action="" id="product_contact_form" class="pb-4 col-12">
-                    <textarea name="comment" id="comment_textarea" rows="5"
-                        placeholder="Lasa mesaj vinzatorului"
+                    <textarea name="comment" id="comment_textarea" rows="5" placeholder="Lasa mesaj vinzatorului"
                         class="w-100 mt-3 products_comment"></textarea>
                     <div class="d-flex justify-content-end w-100 mt-3">
                         <button type="submit" class="details_button text-capitalize text-decoration-none"><i
                                 class="bi bi-send me-2"></i> Trimite mesaj</button>
                     </div>
-    
+
                 </form>
             </div>
             <div class="mt-0 col-12 col-lg-2">
                 <h1 class="fs-3 mb-3 d-flex d-lg-none">Produse recomandate:</h1>
-                <div class="row mt-3 mt-lg-0">
+                <div id="carouselproduct_recomended" class="carousel slide d-sm-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="product_page.html"
+                                class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                                <div
+                                    class="position-absolute favorite_button justify-content-center align-items-center">
+                                    <img src="assets/images/heart.svg" class="favorite_heart" alt="">
+                                </div>
+                                <img src="assets/images/products/produs1.jpg" class="products_cards_image" alt="">
+                                <span class="products_card__title mt-3">Stropitoare pentru cereale</span>
+                                <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="product_page.html"
+                                class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                                <div
+                                    class="position-absolute favorite_button justify-content-center align-items-center">
+                                    <img src="assets/images/heart.svg" class="favorite_heart" alt="">
+                                </div>
+                                <img src="assets/images/products/produs4.jpg" class="products_cards_image" alt="">
+                                <span class="text-decoration-none products_card__title mt-3">Semanatoare pentru popusoi
+                                    2.5m</span>
+                                <span class="products_card__price mt-1">Pret: <span>1368$</span></span>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="product_page.html"
+                                class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
+                                <div
+                                    class="position-absolute favorite_button justify-content-center favorite_product align-items-center">
+                                    <img src="assets/images/heart_active.svg" class="favorite_heart" alt="">
+                                </div>
+                                <img src="assets/images/products/produs2.jpg" class="products_cards_image" alt="">
+                                <span class="text-decoration-none products_card__title mt-3">Distribuitor de gunoi de
+                                    grajd</span>
+                                <span class="products_card__price mt-1">Pret: <span>670$</span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="row mt-3 mt-lg-0 related-products d-none d-sm-flex">
                     <div class="col-12 col-sm-6 col-lg-12">
                         <a href="product_page.html"
                             class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
@@ -211,7 +259,7 @@
                             <span class="products_card__price mt-1">Pret: <span>1500$</span></span>
                         </a>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-12 mt-2 mt-sm-0">
+                    <div class="col-12 col-sm-6 col-lg-12 mt-2 mt-sm-0 mt-lg-2">
                         <a href="product_page.html"
                             class="products__cards text-decoration-none d-flex flex-column justify-content-start align-items-start position-relative">
                             <div class="position-absolute favorite_button justify-content-center align-items-center">
@@ -261,12 +309,17 @@
                             alt="logo"></a>
                 </div>
                 <div class="footer-social_link_box d-flex align-items-center mt-2">
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt="" class="social_svg"></a>
-                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt="" class="social_svg"></a>
-                  </div>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/facebook.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/instagramâ.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/social.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/telegram.svg" alt=""
+                            class="social_svg"></a>
+                    <a href="#" class="text-decoration-none ms-2"><img src="assets/youtube.svg" alt=""
+                            class="social_svg"></a>
+                </div>
             </div>
 
             <div class="row g-2 mt-4">
@@ -344,28 +397,32 @@
     <!-- modal annonce -->
     <div class="modal fade" id="place_anonce" tabindex="-1" aria-labelledby="place_anonceLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="" class="order_form">
-                <div class="form_content">
-                    <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3" required>
-                    <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3" required>
-                    <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
-                    <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj" class="order_form_input" required></textarea>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="place_anonceLabel">Comanda Plasarea anuntului</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </form>
+                <div class="modal-body">
+                    <form action="" class="order_form">
+                        <div class="form_content">
+                            <input type="text" name="name" placeholder="Nume Prenume" class="order_form_input mb-3"
+                                required>
+                            <input type="text" name="phone" placeholder="Telefon" class="order_form_input mb-3"
+                                required>
+                            <input type="email" name="email" placeholder="Email" class="order_form_input mb-3">
+                            <textarea name="message" id="order_form_message" rows="5" placeholder="Mesaj"
+                                class="order_form_input" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
+                    <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i>
+                        Trimite</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Inchide</button>
-              <button type="button" class="details_button text-capitalize px-3 py-2"><i class="bi bi-send"></i> Trimite</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- modal -->
     <div class="offcanvas offcanvas-end d-md-none" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -415,7 +472,41 @@
         </div>
     </div>
 
+     <!-- Modal carousel -->
+     <div class="modal modal_custom_bg fade maximize_images" id="maximize_onclick" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content bg-transparent">
+             <div class="modal-body p-0 border-0">
+                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img src="assets/images/products/produs4.jpg" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                            <img src="assets/images/products/produs10.jpg" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="assets/images/products/produs11.jpg" class="d-block w-100" alt="...">
+                         </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                         data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                         data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 </body>
+<link rel="stylesheet" href="assets/css/modal_carousel.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
