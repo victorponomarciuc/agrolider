@@ -92,7 +92,15 @@
                 semănat</a>
         </h1>
         <div class="row justify-content-between p-0 m-0 mt-3">
-            <div class="d-flex justify-content-end site_padding pe-2">
+            <div class="d-flex justify-content-between align-items-center site_padding pe-2">
+                <section class="minisearch w-auto">
+                    <div class="d-flex w-100 d-md-none">
+                      <div class="search__input mt-3 d-flex align-items-center mini_search">
+                        <input type="text" id="search-content" class="w-100 minisearch_input" placeholder="Cautare">
+                        <i class="bi bi-search"></i>
+                      </div>
+                    </div>
+                  </section>
                 <button class="btn filter_btn d-block d-md-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#filter_modal" aria-controls="filter_modal"><i class="bi bi-funnel me-2"></i><span>Filtru</span></button>
             </div>
